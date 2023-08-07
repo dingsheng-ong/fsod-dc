@@ -1,0 +1,147 @@
+[07/11 08:29:26] detectron2 INFO: Rank of current process: 0. World size: 4
+[07/11 08:29:26] detectron2 INFO: Full config saved to checkpoints/voc/ours/fsod3/2shot/seed1/config.yaml
+[07/11 08:29:28] fvcore.common.checkpoint INFO: [Checkpointer] Loading from ./pretrain/R-101.pkl ...
+[07/11 08:29:28] fvcore.common.checkpoint INFO: Reading a file from 'torchvision'
+[07/11 08:29:30] detectron2 INFO: Loss: 0.0002
+[07/11 08:29:30] detectron2 INFO: [CLS] Use dropout: p = 0.8
+[07/11 08:29:30] detectron2 INFO: [Refine] n = 24, α = 0.1
+[07/11 08:29:30] d2.data.build INFO: Removed 0 images with no usable annotations. 40 images left.
+[07/11 08:29:30] d2.data.build INFO: Distribution of instances among all 20 categories:
+[36m|  category   | #instances   |  category  | #instances   |  category   | #instances   |
+|:-----------:|:-------------|:----------:|:-------------|:-----------:|:-------------|
+|  aeroplane  | 2            |  bicycle   | 2            |    bird     | 2            |
+|   bottle    | 2            |    bus     | 2            |     car     | 2            |
+|    chair    | 2            |    cow     | 2            | diningtable | 2            |
+|     dog     | 2            |   horse    | 2            |   person    | 2            |
+| pottedplant | 2            |   train    | 2            |  tvmonitor  | 2            |
+|    boat     | 2            |    cat     | 2            |  motorbike  | 2            |
+|    sheep    | 2            |    sofa    | 2            |             |              |
+|    total    | 40           |            |              |             |              |[0m
+[07/11 08:29:30] d2.data.dataset_mapper INFO: [DatasetMapper] Augmentations used in training: [ResizeShortestEdge(short_edge_length=..., max_size=1333, sample_style='choice'), RandomFlip()]
+[07/11 08:29:30] d2.data.build INFO: Using training sampler TrainingSampler
+[07/11 08:29:31] d2.data.common INFO: Serializing 40 elements to byte tensors and concatenating them all ...
+[07/11 08:29:31] d2.data.common INFO: Serialized dataset takes 0.01 MiB
+[07/11 08:29:31] fvcore.common.checkpoint INFO: [Checkpointer] Loading from checkpoints/voc/ours/base3/model_final-fsod.pth ...
+[07/11 08:29:32] fvcore.common.checkpoint WARNING: Some model parameters or buffers are not found in the checkpoint:
+[34mroi_heads.box_predictor.fc.weight[0m
+[34mroi_heads.box_predictor.fsup[0m
+[07/11 08:29:32] d2.engine.train_loop INFO: Starting training from iteration 0
+[07/11 08:29:43] d2.utils.events INFO:  eta: 0:08:43  iter: 19  total_loss: 0.5953  loss_cls: 0.3841  loss_box_reg: 0.07622  loss_rpn_cls: 0.06849  loss_rpn_loc: 0.06175  time: 0.3554  data_time: 0.2246  lr: 0.0001  max_mem: 6612M
+[07/11 08:29:50] d2.utils.events INFO:  eta: 0:08:32  iter: 39  total_loss: 0.4049  loss_cls: 0.2172  loss_box_reg: 0.06638  loss_rpn_cls: 0.05516  loss_rpn_loc: 0.05225  time: 0.3537  data_time: 0.0148  lr: 0.0001  max_mem: 6831M
+[07/11 08:29:57] d2.utils.events INFO:  eta: 0:08:30  iter: 59  total_loss: 0.3351  loss_cls: 0.1749  loss_box_reg: 0.06753  loss_rpn_cls: 0.04559  loss_rpn_loc: 0.05735  time: 0.3566  data_time: 0.0130  lr: 0.0001  max_mem: 7046M
+[07/11 08:30:04] d2.utils.events INFO:  eta: 0:08:18  iter: 79  total_loss: 0.2959  loss_cls: 0.1465  loss_box_reg: 0.06584  loss_rpn_cls: 0.03714  loss_rpn_loc: 0.05325  time: 0.3522  data_time: 0.0140  lr: 0.0001  max_mem: 7046M
+[07/11 08:30:11] d2.utils.events INFO:  eta: 0:08:12  iter: 99  total_loss: 0.2954  loss_cls: 0.1346  loss_box_reg: 0.06751  loss_rpn_cls: 0.03448  loss_rpn_loc: 0.05427  time: 0.3520  data_time: 0.0134  lr: 0.0001  max_mem: 7046M
+[07/11 08:30:18] d2.utils.events INFO:  eta: 0:08:04  iter: 119  total_loss: 0.2766  loss_cls: 0.1269  loss_box_reg: 0.06661  loss_rpn_cls: 0.03419  loss_rpn_loc: 0.04529  time: 0.3507  data_time: 0.0144  lr: 0.0001  max_mem: 7046M
+[07/11 08:30:25] d2.utils.events INFO:  eta: 0:07:54  iter: 139  total_loss: 0.2545  loss_cls: 0.1146  loss_box_reg: 0.06564  loss_rpn_cls: 0.02985  loss_rpn_loc: 0.04237  time: 0.3494  data_time: 0.0153  lr: 0.0001  max_mem: 7046M
+[07/11 08:30:32] d2.utils.events INFO:  eta: 0:07:46  iter: 159  total_loss: 0.2492  loss_cls: 0.1131  loss_box_reg: 0.06989  loss_rpn_cls: 0.02971  loss_rpn_loc: 0.04418  time: 0.3492  data_time: 0.0142  lr: 0.0001  max_mem: 7046M
+[07/11 08:30:39] d2.utils.events INFO:  eta: 0:07:39  iter: 179  total_loss: 0.2361  loss_cls: 0.1018  loss_box_reg: 0.05954  loss_rpn_cls: 0.02735  loss_rpn_loc: 0.04167  time: 0.3489  data_time: 0.0139  lr: 0.0001  max_mem: 7046M
+[07/11 08:30:46] d2.utils.events INFO:  eta: 0:07:29  iter: 199  total_loss: 0.2215  loss_cls: 0.09333  loss_box_reg: 0.05957  loss_rpn_cls: 0.02581  loss_rpn_loc: 0.04073  time: 0.3479  data_time: 0.0130  lr: 0.0001  max_mem: 7046M
+[07/11 08:30:52] d2.utils.events INFO:  eta: 0:07:22  iter: 219  total_loss: 0.2229  loss_cls: 0.09296  loss_box_reg: 0.05969  loss_rpn_cls: 0.02461  loss_rpn_loc: 0.04069  time: 0.3477  data_time: 0.0135  lr: 0.0001  max_mem: 7046M
+[07/11 08:30:59] d2.utils.events INFO:  eta: 0:07:14  iter: 239  total_loss: 0.2057  loss_cls: 0.08951  loss_box_reg: 0.05749  loss_rpn_cls: 0.02405  loss_rpn_loc: 0.0409  time: 0.3474  data_time: 0.0154  lr: 0.0001  max_mem: 7046M
+[07/11 08:31:06] d2.utils.events INFO:  eta: 0:07:07  iter: 259  total_loss: 0.218  loss_cls: 0.08952  loss_box_reg: 0.05885  loss_rpn_cls: 0.02667  loss_rpn_loc: 0.04476  time: 0.3471  data_time: 0.0151  lr: 0.0001  max_mem: 7046M
+[07/11 08:31:13] d2.utils.events INFO:  eta: 0:07:00  iter: 279  total_loss: 0.1997  loss_cls: 0.08623  loss_box_reg: 0.0593  loss_rpn_cls: 0.02142  loss_rpn_loc: 0.03497  time: 0.3464  data_time: 0.0162  lr: 0.0001  max_mem: 7046M
+[07/11 08:31:20] d2.utils.events INFO:  eta: 0:06:53  iter: 299  total_loss: 0.1975  loss_cls: 0.08243  loss_box_reg: 0.05638  loss_rpn_cls: 0.01973  loss_rpn_loc: 0.03982  time: 0.3461  data_time: 0.0157  lr: 0.0001  max_mem: 7046M
+[07/11 08:31:27] d2.utils.events INFO:  eta: 0:06:46  iter: 319  total_loss: 0.1982  loss_cls: 0.08006  loss_box_reg: 0.05202  loss_rpn_cls: 0.02387  loss_rpn_loc: 0.04245  time: 0.3460  data_time: 0.0131  lr: 0.0001  max_mem: 7046M
+[07/11 08:31:34] d2.utils.events INFO:  eta: 0:06:39  iter: 339  total_loss: 0.1925  loss_cls: 0.0797  loss_box_reg: 0.04836  loss_rpn_cls: 0.01783  loss_rpn_loc: 0.04484  time: 0.3457  data_time: 0.0151  lr: 0.0001  max_mem: 7046M
+[07/11 08:31:40] d2.utils.events INFO:  eta: 0:06:32  iter: 359  total_loss: 0.1944  loss_cls: 0.07801  loss_box_reg: 0.05145  loss_rpn_cls: 0.02085  loss_rpn_loc: 0.04043  time: 0.3456  data_time: 0.0143  lr: 0.0001  max_mem: 7046M
+[07/11 08:31:47] d2.utils.events INFO:  eta: 0:06:25  iter: 379  total_loss: 0.1834  loss_cls: 0.0748  loss_box_reg: 0.04802  loss_rpn_cls: 0.02223  loss_rpn_loc: 0.04174  time: 0.3455  data_time: 0.0146  lr: 0.0001  max_mem: 7046M
+[07/11 08:31:54] d2.utils.events INFO:  eta: 0:06:18  iter: 399  total_loss: 0.1811  loss_cls: 0.0776  loss_box_reg: 0.04923  loss_rpn_cls: 0.02181  loss_rpn_loc: 0.03334  time: 0.3452  data_time: 0.0120  lr: 0.0001  max_mem: 7046M
+[07/11 08:32:01] d2.utils.events INFO:  eta: 0:06:11  iter: 419  total_loss: 0.1739  loss_cls: 0.07461  loss_box_reg: 0.0485  loss_rpn_cls: 0.01594  loss_rpn_loc: 0.03464  time: 0.3450  data_time: 0.0155  lr: 0.0001  max_mem: 7046M
+[07/11 08:32:08] d2.utils.events INFO:  eta: 0:06:03  iter: 439  total_loss: 0.178  loss_cls: 0.07257  loss_box_reg: 0.04419  loss_rpn_cls: 0.01991  loss_rpn_loc: 0.03378  time: 0.3445  data_time: 0.0135  lr: 0.0001  max_mem: 7046M
+[07/11 08:32:14] d2.utils.events INFO:  eta: 0:05:56  iter: 459  total_loss: 0.1789  loss_cls: 0.07353  loss_box_reg: 0.0459  loss_rpn_cls: 0.01698  loss_rpn_loc: 0.03441  time: 0.3443  data_time: 0.0134  lr: 0.0001  max_mem: 7046M
+[07/11 08:32:21] d2.utils.events INFO:  eta: 0:05:50  iter: 479  total_loss: 0.1695  loss_cls: 0.07229  loss_box_reg: 0.04538  loss_rpn_cls: 0.01724  loss_rpn_loc: 0.03497  time: 0.3443  data_time: 0.0157  lr: 0.0001  max_mem: 7046M
+[07/11 08:32:28] d2.utils.events INFO:  eta: 0:05:42  iter: 499  total_loss: 0.1691  loss_cls: 0.07207  loss_box_reg: 0.04488  loss_rpn_cls: 0.0181  loss_rpn_loc: 0.03359  time: 0.3440  data_time: 0.0131  lr: 0.0001  max_mem: 7046M
+[07/11 08:32:35] d2.utils.events INFO:  eta: 0:05:35  iter: 519  total_loss: 0.1682  loss_cls: 0.07002  loss_box_reg: 0.04301  loss_rpn_cls: 0.01597  loss_rpn_loc: 0.03877  time: 0.3435  data_time: 0.0126  lr: 0.0001  max_mem: 7046M
+[07/11 08:32:41] d2.utils.events INFO:  eta: 0:05:28  iter: 539  total_loss: 0.1592  loss_cls: 0.0688  loss_box_reg: 0.0413  loss_rpn_cls: 0.01696  loss_rpn_loc: 0.03321  time: 0.3432  data_time: 0.0140  lr: 0.0001  max_mem: 7046M
+[07/11 08:32:48] d2.utils.events INFO:  eta: 0:05:21  iter: 559  total_loss: 0.1607  loss_cls: 0.07004  loss_box_reg: 0.04292  loss_rpn_cls: 0.01496  loss_rpn_loc: 0.03099  time: 0.3430  data_time: 0.0166  lr: 0.0001  max_mem: 7046M
+[07/11 08:32:55] d2.utils.events INFO:  eta: 0:05:14  iter: 579  total_loss: 0.1605  loss_cls: 0.07091  loss_box_reg: 0.04103  loss_rpn_cls: 0.01504  loss_rpn_loc: 0.02759  time: 0.3429  data_time: 0.0166  lr: 0.0001  max_mem: 7046M
+[07/11 08:33:02] d2.utils.events INFO:  eta: 0:05:08  iter: 599  total_loss: 0.1545  loss_cls: 0.066  loss_box_reg: 0.03977  loss_rpn_cls: 0.01417  loss_rpn_loc: 0.03435  time: 0.3428  data_time: 0.0117  lr: 0.0001  max_mem: 7046M
+[07/11 08:33:09] d2.utils.events INFO:  eta: 0:05:01  iter: 619  total_loss: 0.1579  loss_cls: 0.06352  loss_box_reg: 0.03813  loss_rpn_cls: 0.01665  loss_rpn_loc: 0.0371  time: 0.3430  data_time: 0.0144  lr: 0.0001  max_mem: 7046M
+[07/11 08:33:16] d2.utils.events INFO:  eta: 0:04:54  iter: 639  total_loss: 0.1581  loss_cls: 0.06658  loss_box_reg: 0.0391  loss_rpn_cls: 0.01638  loss_rpn_loc: 0.0356  time: 0.3430  data_time: 0.0159  lr: 0.0001  max_mem: 7046M
+[07/11 08:33:22] d2.utils.events INFO:  eta: 0:04:47  iter: 659  total_loss: 0.1496  loss_cls: 0.06675  loss_box_reg: 0.03713  loss_rpn_cls: 0.01689  loss_rpn_loc: 0.027  time: 0.3429  data_time: 0.0147  lr: 0.0001  max_mem: 7046M
+[07/11 08:33:29] d2.utils.events INFO:  eta: 0:04:40  iter: 679  total_loss: 0.1537  loss_cls: 0.06108  loss_box_reg: 0.03738  loss_rpn_cls: 0.01634  loss_rpn_loc: 0.03734  time: 0.3427  data_time: 0.0120  lr: 0.0001  max_mem: 7046M
+[07/11 08:33:36] d2.utils.events INFO:  eta: 0:04:33  iter: 699  total_loss: 0.1469  loss_cls: 0.06554  loss_box_reg: 0.03614  loss_rpn_cls: 0.01588  loss_rpn_loc: 0.02714  time: 0.3426  data_time: 0.0124  lr: 0.0001  max_mem: 7046M
+[07/11 08:33:43] d2.utils.events INFO:  eta: 0:04:26  iter: 719  total_loss: 0.1451  loss_cls: 0.06321  loss_box_reg: 0.03773  loss_rpn_cls: 0.01483  loss_rpn_loc: 0.03501  time: 0.3425  data_time: 0.0125  lr: 0.0001  max_mem: 7046M
+[07/11 08:33:50] d2.utils.events INFO:  eta: 0:04:19  iter: 739  total_loss: 0.1443  loss_cls: 0.06098  loss_box_reg: 0.03534  loss_rpn_cls: 0.01411  loss_rpn_loc: 0.0336  time: 0.3426  data_time: 0.0127  lr: 0.0001  max_mem: 7046M
+[07/11 08:33:56] d2.utils.events INFO:  eta: 0:04:13  iter: 759  total_loss: 0.1458  loss_cls: 0.06345  loss_box_reg: 0.0374  loss_rpn_cls: 0.01459  loss_rpn_loc: 0.03211  time: 0.3426  data_time: 0.0145  lr: 0.0001  max_mem: 7046M
+[07/11 08:34:03] d2.utils.events INFO:  eta: 0:04:06  iter: 779  total_loss: 0.1492  loss_cls: 0.06097  loss_box_reg: 0.03746  loss_rpn_cls: 0.01562  loss_rpn_loc: 0.03543  time: 0.3425  data_time: 0.0135  lr: 0.0001  max_mem: 7046M
+[07/11 08:34:10] d2.utils.events INFO:  eta: 0:03:59  iter: 799  total_loss: 0.1466  loss_cls: 0.05995  loss_box_reg: 0.03709  loss_rpn_cls: 0.01419  loss_rpn_loc: 0.03429  time: 0.3424  data_time: 0.0150  lr: 0.0001  max_mem: 7046M
+[07/11 08:34:17] d2.utils.events INFO:  eta: 0:03:52  iter: 819  total_loss: 0.143  loss_cls: 0.06157  loss_box_reg: 0.03613  loss_rpn_cls: 0.01316  loss_rpn_loc: 0.02591  time: 0.3423  data_time: 0.0151  lr: 0.0001  max_mem: 7046M
+[07/11 08:34:24] d2.utils.events INFO:  eta: 0:03:45  iter: 839  total_loss: 0.1429  loss_cls: 0.0593  loss_box_reg: 0.0334  loss_rpn_cls: 0.01463  loss_rpn_loc: 0.03202  time: 0.3424  data_time: 0.0131  lr: 0.0001  max_mem: 7046M
+[07/11 08:34:31] d2.utils.events INFO:  eta: 0:03:38  iter: 859  total_loss: 0.143  loss_cls: 0.06402  loss_box_reg: 0.0361  loss_rpn_cls: 0.01358  loss_rpn_loc: 0.0318  time: 0.3424  data_time: 0.0128  lr: 0.0001  max_mem: 7046M
+[07/11 08:34:37] d2.utils.events INFO:  eta: 0:03:31  iter: 879  total_loss: 0.1444  loss_cls: 0.05916  loss_box_reg: 0.03449  loss_rpn_cls: 0.01372  loss_rpn_loc: 0.0351  time: 0.3424  data_time: 0.0125  lr: 0.0001  max_mem: 7046M
+[07/11 08:34:44] d2.utils.events INFO:  eta: 0:03:24  iter: 899  total_loss: 0.1384  loss_cls: 0.0589  loss_box_reg: 0.03371  loss_rpn_cls: 0.01254  loss_rpn_loc: 0.03242  time: 0.3422  data_time: 0.0125  lr: 0.0001  max_mem: 7046M
+[07/11 08:34:51] d2.utils.events INFO:  eta: 0:03:18  iter: 919  total_loss: 0.1333  loss_cls: 0.05813  loss_box_reg: 0.03412  loss_rpn_cls: 0.01273  loss_rpn_loc: 0.03307  time: 0.3421  data_time: 0.0139  lr: 0.0001  max_mem: 7046M
+[07/11 08:34:58] d2.utils.events INFO:  eta: 0:03:11  iter: 939  total_loss: 0.1355  loss_cls: 0.05424  loss_box_reg: 0.03283  loss_rpn_cls: 0.01176  loss_rpn_loc: 0.02894  time: 0.3421  data_time: 0.0144  lr: 0.0001  max_mem: 7046M
+[07/11 08:35:05] d2.utils.events INFO:  eta: 0:03:04  iter: 959  total_loss: 0.1338  loss_cls: 0.05471  loss_box_reg: 0.0334  loss_rpn_cls: 0.01268  loss_rpn_loc: 0.02969  time: 0.3420  data_time: 0.0147  lr: 0.0001  max_mem: 7046M
+[07/11 08:35:11] d2.utils.events INFO:  eta: 0:02:57  iter: 979  total_loss: 0.1345  loss_cls: 0.05835  loss_box_reg: 0.03182  loss_rpn_cls: 0.01234  loss_rpn_loc: 0.03114  time: 0.3420  data_time: 0.0123  lr: 0.0001  max_mem: 7046M
+[07/11 08:35:18] d2.utils.events INFO:  eta: 0:02:50  iter: 999  total_loss: 0.1421  loss_cls: 0.05734  loss_box_reg: 0.03348  loss_rpn_cls: 0.01387  loss_rpn_loc: 0.03456  time: 0.3420  data_time: 0.0138  lr: 0.0001  max_mem: 7046M
+[07/11 08:35:25] d2.utils.events INFO:  eta: 0:02:43  iter: 1019  total_loss: 0.1318  loss_cls: 0.0578  loss_box_reg: 0.03358  loss_rpn_cls: 0.01121  loss_rpn_loc: 0.02932  time: 0.3419  data_time: 0.0150  lr: 0.0001  max_mem: 7046M
+[07/11 08:35:32] d2.utils.events INFO:  eta: 0:02:36  iter: 1039  total_loss: 0.1255  loss_cls: 0.05515  loss_box_reg: 0.03325  loss_rpn_cls: 0.01134  loss_rpn_loc: 0.02755  time: 0.3418  data_time: 0.0142  lr: 0.0001  max_mem: 7046M
+[07/11 08:35:38] d2.utils.events INFO:  eta: 0:02:29  iter: 1059  total_loss: 0.1253  loss_cls: 0.05568  loss_box_reg: 0.03208  loss_rpn_cls: 0.01136  loss_rpn_loc: 0.02523  time: 0.3417  data_time: 0.0147  lr: 0.0001  max_mem: 7046M
+[07/11 08:35:45] d2.utils.events INFO:  eta: 0:02:23  iter: 1079  total_loss: 0.1376  loss_cls: 0.0567  loss_box_reg: 0.03401  loss_rpn_cls: 0.01037  loss_rpn_loc: 0.03754  time: 0.3416  data_time: 0.0116  lr: 0.0001  max_mem: 7046M
+[07/11 08:35:52] d2.utils.events INFO:  eta: 0:02:16  iter: 1099  total_loss: 0.1444  loss_cls: 0.05883  loss_box_reg: 0.03435  loss_rpn_cls: 0.01271  loss_rpn_loc: 0.04019  time: 0.3417  data_time: 0.0125  lr: 0.0001  max_mem: 7046M
+[07/11 08:35:59] d2.utils.events INFO:  eta: 0:02:09  iter: 1119  total_loss: 0.1293  loss_cls: 0.05601  loss_box_reg: 0.03224  loss_rpn_cls: 0.01124  loss_rpn_loc: 0.02916  time: 0.3416  data_time: 0.0143  lr: 0.0001  max_mem: 7046M
+[07/11 08:36:06] d2.utils.events INFO:  eta: 0:02:02  iter: 1139  total_loss: 0.1324  loss_cls: 0.05799  loss_box_reg: 0.0342  loss_rpn_cls: 0.01295  loss_rpn_loc: 0.02734  time: 0.3415  data_time: 0.0161  lr: 0.0001  max_mem: 7046M
+[07/11 08:36:12] d2.utils.events INFO:  eta: 0:01:55  iter: 1159  total_loss: 0.1293  loss_cls: 0.05618  loss_box_reg: 0.03389  loss_rpn_cls: 0.01074  loss_rpn_loc: 0.02509  time: 0.3414  data_time: 0.0162  lr: 0.0001  max_mem: 7046M
+[07/11 08:36:19] d2.utils.events INFO:  eta: 0:01:48  iter: 1179  total_loss: 0.1335  loss_cls: 0.05255  loss_box_reg: 0.0321  loss_rpn_cls: 0.01127  loss_rpn_loc: 0.03419  time: 0.3415  data_time: 0.0150  lr: 0.0001  max_mem: 7046M
+[07/11 08:36:26] d2.utils.events INFO:  eta: 0:01:42  iter: 1199  total_loss: 0.1289  loss_cls: 0.05459  loss_box_reg: 0.0328  loss_rpn_cls: 0.009548  loss_rpn_loc: 0.031  time: 0.3415  data_time: 0.0130  lr: 0.0001  max_mem: 7046M
+[07/11 08:36:33] d2.utils.events INFO:  eta: 0:01:35  iter: 1219  total_loss: 0.1236  loss_cls: 0.05501  loss_box_reg: 0.03058  loss_rpn_cls: 0.01145  loss_rpn_loc: 0.02653  time: 0.3414  data_time: 0.0138  lr: 1e-05  max_mem: 7046M
+[07/11 08:36:40] d2.utils.events INFO:  eta: 0:01:28  iter: 1239  total_loss: 0.1226  loss_cls: 0.05365  loss_box_reg: 0.03216  loss_rpn_cls: 0.01189  loss_rpn_loc: 0.02097  time: 0.3413  data_time: 0.0142  lr: 1e-05  max_mem: 7046M
+[07/11 08:36:46] d2.utils.events INFO:  eta: 0:01:21  iter: 1259  total_loss: 0.1266  loss_cls: 0.05569  loss_box_reg: 0.0321  loss_rpn_cls: 0.01211  loss_rpn_loc: 0.02395  time: 0.3414  data_time: 0.0140  lr: 1e-05  max_mem: 7046M
+[07/11 08:36:53] d2.utils.events INFO:  eta: 0:01:14  iter: 1279  total_loss: 0.1229  loss_cls: 0.05668  loss_box_reg: 0.03282  loss_rpn_cls: 0.01084  loss_rpn_loc: 0.02253  time: 0.3414  data_time: 0.0134  lr: 1e-05  max_mem: 7046M
+[07/11 08:37:00] d2.utils.events INFO:  eta: 0:01:07  iter: 1299  total_loss: 0.1156  loss_cls: 0.05372  loss_box_reg: 0.03153  loss_rpn_cls: 0.009989  loss_rpn_loc: 0.01946  time: 0.3413  data_time: 0.0162  lr: 1e-05  max_mem: 7046M
+[07/11 08:37:07] d2.utils.events INFO:  eta: 0:01:01  iter: 1319  total_loss: 0.1249  loss_cls: 0.05211  loss_box_reg: 0.03198  loss_rpn_cls: 0.0131  loss_rpn_loc: 0.02562  time: 0.3413  data_time: 0.0151  lr: 1e-05  max_mem: 7046M
+[07/11 08:37:14] d2.utils.events INFO:  eta: 0:00:54  iter: 1339  total_loss: 0.12  loss_cls: 0.05525  loss_box_reg: 0.03474  loss_rpn_cls: 0.009614  loss_rpn_loc: 0.01802  time: 0.3413  data_time: 0.0135  lr: 1e-05  max_mem: 7046M
+[07/11 08:37:20] d2.utils.events INFO:  eta: 0:00:47  iter: 1359  total_loss: 0.1173  loss_cls: 0.05294  loss_box_reg: 0.0317  loss_rpn_cls: 0.01102  loss_rpn_loc: 0.02004  time: 0.3412  data_time: 0.0125  lr: 1e-05  max_mem: 7046M
+[07/11 08:37:27] d2.utils.events INFO:  eta: 0:00:40  iter: 1379  total_loss: 0.1216  loss_cls: 0.05454  loss_box_reg: 0.03219  loss_rpn_cls: 0.01181  loss_rpn_loc: 0.02297  time: 0.3412  data_time: 0.0139  lr: 1e-05  max_mem: 7046M
+[07/11 08:37:34] d2.utils.events INFO:  eta: 0:00:33  iter: 1399  total_loss: 0.1162  loss_cls: 0.05398  loss_box_reg: 0.02914  loss_rpn_cls: 0.01048  loss_rpn_loc: 0.02067  time: 0.3412  data_time: 0.0126  lr: 1e-05  max_mem: 7046M
+[07/11 08:37:41] d2.utils.events INFO:  eta: 0:00:27  iter: 1419  total_loss: 0.1181  loss_cls: 0.0525  loss_box_reg: 0.03039  loss_rpn_cls: 0.0122  loss_rpn_loc: 0.019  time: 0.3411  data_time: 0.0126  lr: 1e-05  max_mem: 7046M
+[07/11 08:37:48] d2.utils.events INFO:  eta: 0:00:20  iter: 1439  total_loss: 0.1163  loss_cls: 0.05394  loss_box_reg: 0.03077  loss_rpn_cls: 0.01102  loss_rpn_loc: 0.02254  time: 0.3412  data_time: 0.0131  lr: 1e-05  max_mem: 7046M
+[07/11 08:37:54] d2.utils.events INFO:  eta: 0:00:13  iter: 1459  total_loss: 0.1134  loss_cls: 0.05219  loss_box_reg: 0.02958  loss_rpn_cls: 0.009935  loss_rpn_loc: 0.01722  time: 0.3410  data_time: 0.0132  lr: 1e-05  max_mem: 7046M
+[07/11 08:38:01] d2.utils.events INFO:  eta: 0:00:06  iter: 1479  total_loss: 0.1152  loss_cls: 0.05324  loss_box_reg: 0.0308  loss_rpn_cls: 0.01016  loss_rpn_loc: 0.02038  time: 0.3410  data_time: 0.0161  lr: 1e-05  max_mem: 7046M
+[07/11 08:38:08] fvcore.common.checkpoint INFO: Saving checkpoint to checkpoints/voc/ours/fsod3/2shot/seed1/model_final.pth
+[07/11 08:38:08] d2.utils.events INFO:  eta: 0:00:00  iter: 1499  total_loss: 0.1192  loss_cls: 0.05328  loss_box_reg: 0.03193  loss_rpn_cls: 0.01102  loss_rpn_loc: 0.02144  time: 0.3411  data_time: 0.0174  lr: 1e-05  max_mem: 7046M
+[07/11 08:38:08] d2.engine.hooks INFO: Overall training speed: 1498 iterations in 0:08:30 (0.3411 s / it)
+[07/11 08:38:08] d2.engine.hooks INFO: Total training time: 0:08:31 (0:00:00 on hooks)
+[07/11 08:38:09] d2.data.build INFO: Distribution of instances among all 20 categories:
+[36m|  category   | #instances   |  category  | #instances   |  category   | #instances   |
+|:-----------:|:-------------|:----------:|:-------------|:-----------:|:-------------|
+|  aeroplane  | 311          |  bicycle   | 389          |    bird     | 576          |
+|   bottle    | 657          |    bus     | 254          |     car     | 1541         |
+|    chair    | 1374         |    cow     | 329          | diningtable | 299          |
+|     dog     | 530          |   horse    | 395          |   person    | 5227         |
+| pottedplant | 592          |   train    | 302          |  tvmonitor  | 361          |
+|    boat     | 393          |    cat     | 370          |  motorbike  | 369          |
+|    sheep    | 311          |    sofa    | 396          |             |              |
+|    total    | 14976        |            |              |             |              |[0m
+[07/11 08:38:09] d2.data.dataset_mapper INFO: [DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[07/11 08:38:09] d2.data.common INFO: Serializing 4952 elements to byte tensors and concatenating them all ...
+[07/11 08:38:09] d2.data.common INFO: Serialized dataset takes 2.23 MiB
+[07/11 08:38:09] d2.evaluation.evaluator INFO: Start inference on 1238 batches
+[07/11 08:38:32] d2.evaluation.evaluator INFO: Inference done 11/1238. Dataloading: 0.0009 s/iter. Inference: 0.0422 s/iter. Eval: 0.0004 s/iter. Total: 0.0434 s/iter. ETA=0:00:53
+[07/11 08:38:37] d2.evaluation.evaluator INFO: Inference done 128/1238. Dataloading: 0.0012 s/iter. Inference: 0.0414 s/iter. Eval: 0.0004 s/iter. Total: 0.0431 s/iter. ETA=0:00:47
+[07/11 08:38:42] d2.evaluation.evaluator INFO: Inference done 244/1238. Dataloading: 0.0013 s/iter. Inference: 0.0414 s/iter. Eval: 0.0004 s/iter. Total: 0.0431 s/iter. ETA=0:00:42
+[07/11 08:38:47] d2.evaluation.evaluator INFO: Inference done 361/1238. Dataloading: 0.0013 s/iter. Inference: 0.0413 s/iter. Eval: 0.0004 s/iter. Total: 0.0430 s/iter. ETA=0:00:37
+[07/11 08:38:52] d2.evaluation.evaluator INFO: Inference done 479/1238. Dataloading: 0.0013 s/iter. Inference: 0.0412 s/iter. Eval: 0.0004 s/iter. Total: 0.0429 s/iter. ETA=0:00:32
+[07/11 08:38:57] d2.evaluation.evaluator INFO: Inference done 598/1238. Dataloading: 0.0013 s/iter. Inference: 0.0411 s/iter. Eval: 0.0004 s/iter. Total: 0.0428 s/iter. ETA=0:00:27
+[07/11 08:39:02] d2.evaluation.evaluator INFO: Inference done 717/1238. Dataloading: 0.0013 s/iter. Inference: 0.0409 s/iter. Eval: 0.0004 s/iter. Total: 0.0427 s/iter. ETA=0:00:22
+[07/11 08:39:07] d2.evaluation.evaluator INFO: Inference done 834/1238. Dataloading: 0.0013 s/iter. Inference: 0.0409 s/iter. Eval: 0.0004 s/iter. Total: 0.0427 s/iter. ETA=0:00:17
+[07/11 08:39:12] d2.evaluation.evaluator INFO: Inference done 951/1238. Dataloading: 0.0013 s/iter. Inference: 0.0410 s/iter. Eval: 0.0004 s/iter. Total: 0.0427 s/iter. ETA=0:00:12
+[07/11 08:39:17] d2.evaluation.evaluator INFO: Inference done 1069/1238. Dataloading: 0.0013 s/iter. Inference: 0.0410 s/iter. Eval: 0.0004 s/iter. Total: 0.0427 s/iter. ETA=0:00:07
+[07/11 08:39:22] d2.evaluation.evaluator INFO: Inference done 1190/1238. Dataloading: 0.0013 s/iter. Inference: 0.0408 s/iter. Eval: 0.0004 s/iter. Total: 0.0426 s/iter. ETA=0:00:02
+[07/11 08:39:24] d2.evaluation.evaluator INFO: Total inference time: 0:00:52.836578 (0.042852 s / iter per device, on 4 devices)
+[07/11 08:39:24] d2.evaluation.evaluator INFO: Total inference pure compute time: 0:00:50 (0.040798 s / iter per device, on 4 devices)
+[07/11 08:39:26] detectron2 INFO: Evaluating voc_2007_test_all3 using 2007 metric. Note that results do not use the official Matlab API.
+[07/11 08:39:40] detectron2 INFO: Per-class AP50:
+|  aeroplane  |  bicycle  |  bird  |  bottle  |  bus   |  car   |  chair  |  cow   |  diningtable  |  dog   |  horse  |  person  |  pottedplant  |  train  |  tvmonitor  |  boat  |  cat   |  motorbike  |  sheep  |  sofa  |
+|:-----------:|:---------:|:------:|:--------:|:------:|:------:|:-------:|:------:|:-------------:|:------:|:-------:|:--------:|:-------------:|:-------:|:-----------:|:------:|:------:|:-----------:|:-------:|:------:|
+|   87.148    |  87.996   | 86.740 |  73.832  | 87.027 | 89.307 | 57.937  | 87.300 |    68.220     | 87.905 | 89.867  |  73.139  |    57.561     | 86.106  |   85.241    | 33.914 | 84.701 |   77.963    | 77.996  | 48.382 |
+[07/11 08:39:40] detectron2 INFO: Evaluation Result:
+|   AP   |  AP50  |  AP75  |  bAP   |  bAP50  |  bAP75  |  nAP   |  nAP50  |  nAP75  |
+|:------:|:------:|:------:|:------:|:-------:|:-------:|:------:|:-------:|:-------:|
+| 48.811 | 76.414 | 53.485 | 53.587 | 80.355  | 60.319  | 34.483 | 64.591  | 32.983  |
+[07/11 08:39:40] d2.engine.defaults INFO: Evaluation results for voc_2007_test_all3 in csv format:
+[07/11 08:39:40] d2.evaluation.testing INFO: copypaste: Task: bbox
+[07/11 08:39:40] d2.evaluation.testing INFO: copypaste: AP,AP50,AP75,bAP,bAP50,bAP75,nAP,nAP50,nAP75
+[07/11 08:39:40] d2.evaluation.testing INFO: copypaste: 48.8111,76.4141,53.4848,53.5873,80.3551,60.3188,34.4825,64.5912,32.9829
